@@ -1,0 +1,17 @@
+{
+  "name": "glyphs-tamil",
+  "description": "",
+  "repository": "https://github.com/imohanvadivel/glyphs.git",
+  "author": "Mohan Vadivel <mohanvadivel@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "esbuild src/script.js src/style.css --bundle --external:*.woff2 --watch --outdir=./dist",
+    "build": "esbuild src/script.js src/style.css --bundle --external:*.woff2 --minify --outdir=./dist"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.23"
+  },
+  "dependencies": {
+    "grilles": "^1.0.5"
+  }
+}
